@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  chat_app:
+    build:
+      context: ./chat
+    environment:
+      - APP_SECRET=secret
+      - ERLANG_COOKIE=secret
+    ports:
+      - 4000:4000
+    depends_on:
+      - chat_backend
+  chat_backend:
+    build:
+      context: ./chat_backend
+    environment:
+      - ERLANG_COOKIE=secret

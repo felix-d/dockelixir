@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export HOST_IP=$(ifconfig | awk '/inet addr/{print substr($2,6)}' | head -1)
+
+APP_NAME=$(cat APP_NAME)
+./bin/$APP_NAME foreground

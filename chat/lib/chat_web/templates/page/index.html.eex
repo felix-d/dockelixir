@@ -1,0 +1,8 @@
+<div>
+  <div>
+    <input id="message" label="message"/>
+    <button id="send">Send</button>
+  </div>
+  <ul id="messages"></ul>
+</div>
+
