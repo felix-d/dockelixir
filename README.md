@@ -20,7 +20,7 @@ By keeping the stateful concerns on a separate application part of the same
 cluster, we can achieve continuous blue-green deployments on stateless applications
 with little overhead.
 
-## Run development cluster with watchers.
+## Run development cluster with watchers
 
 *TODO*
 
@@ -30,6 +30,6 @@ with little overhead.
 
 You can access the web app at `http://localhost:4000`.
 
-## Simulate a production environment with Docker Swarm
+## Simulate a production environment with Docker Swarm and Vagrant
 
 *TODO*
